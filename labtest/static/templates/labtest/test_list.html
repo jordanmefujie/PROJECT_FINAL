@@ -1,0 +1,10 @@
+{% extends "base_generic.html" %}
+{% block content %}
+<h2>Lab Tests</h2>
+<ul>
+	{% for test in object_list %}
+	<li><a href="{% url 'test_detail' test.pk %}">{{ test }}</a></li>
+	{% endfor %}
+</ul>
+<a href="{% url 'test_create' %}">Add new test</a>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "base_generic.html" %}
+{% block content %}
+<h2>{{ object }}</h2>
+ <p>Procedure: {{ object.procedure }}</p>
+ <p>Result: {{ object.result }}</p>
+ <a href="{% url 'test_update' object.pk %}">Edit</a>
+ <a href="{% url 'test_delete' object.pk %}">Delete</a>
+ <a href="{% url 'test_list' %}">Back to list</a>
+{% endblock %}

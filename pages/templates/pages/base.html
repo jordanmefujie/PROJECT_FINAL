@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{% block title %}LabManager - Home{% endblock title %}</title>
+		<link rel="stylesheet" href="{% static 'pages/css/styles.css' %}">
+	</head>
+	<body>
+		<header>
+			<h1>LabManager{% block pageName %} {% endblock pageName%}</h1>
+			<nav>
+				<ul>
+					<ul>
+						<li><a href="{% url 'home' %}">Home</a></li>
+						<li><a href="{% url 'about' %}">About</a></li>
+						<li><a href="{% url 'services' %}">Services</a></li>
+						<li><a href="{% url 'contact' %}">Contact</a></li>
+					</ul>
+
+				</ul>
+			</nav>
+		</header>
+
+		{% block main %}
+		{% endblock main %}
+
+		<main>
+			<section>
+				<h2>Welcome to LabManager</h2>
+				<p>Your ultimate solution for managing laboratory resources efficiently.</p>
+			</section>
+			<section>
+				<h3>Key Features</h3>
+				<ul>
+					<li>Resource Tracking</li>
+					<li>Inventory Management</li>
+					<li>Reporting and Analytics</li>
+				</ul>
+			</section>
+		</main>
+		<footer>
+			<p>&copy; 2024 LabManager. All rights reserved.</p>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,34 @@
+{
+  "name": "labmanager",
+  "version": "1.0.0",
+  "description": "A lab system management for tracking results and experimental procedures",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jordanmefujie/PROJECT_FINAL.git"
+  },
+  "keywords": [
+    "lab",
+    "management",
+    "lab",
+    "testing",
+    "lab",
+    "procedures"
+  ],
+  "author": "Jordan Lonpolidormor Mefujie",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jordanmefujie/PROJECT_FINAL/issues"
+  },
+  "homepage": "https://github.com/jordanmefujie/PROJECT_FINAL#readme",
+  "dependencies": {
+    "@babel/core": "^7.24.5",
+    "@babel/preset-env": "^7.24.5",
+    "babel-loader": "^9.1.3",
+    "express": "^4.19.2",
+    "mongoose": "^8.3.4"
+  }
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>LabManager</title>
+</head>
+<body>
+     <h1>Lab Tests</h1>
+     <ul>
+        {% for lab_test in lab_tests %}
+	     <li><a href="{% url 'lab_test_detail' lab_test.id %}">{{ lab_test.name }}</a></li>
+	{% endfor %}
+     </ul>
+
+     <h1>Protocols</h1>
+     <ul>
+	{% for protocol in protocols %}
+	     <li><a href="{% url 'protocol_detail' protocol.id %}">{{ protocol.title }}</a></li>
+	{% endfor %}
+     </ul>
+</body>
+</html>
